@@ -17,3 +17,6 @@ def visualize_scaled_data(scaler, scaler_name, train, feature):
     ax3.hist(scaled)
     ax3.set(title = 'Scaled')
     plt.tight_layout();
+
+
+sns.pairplot(df, kind='reg', corner=True, plot_kws={'line_kws':{'color':'red'}})
